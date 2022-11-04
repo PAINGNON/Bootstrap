@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-<meta name = "viewport" content = "width=device-width, initial-scale=1, user-scalable = no">
-<!-- app -->
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<!-- keywords -->
-<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="paingnon, exchange money, myaimar, mon, မန်, ပိုၚ်နန်,">    
-<!-- bootstrap css -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- bootstrap-icons -->
-<link href="iconcss/bootstrap-icons.css" rel="stylesheet">   
-<!-- bootstrap js -->
-<script src="js/bootstrap.js"></script>
-<!-- รูป icon -->
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/PAINGNON/app/main/paingnon.ico?v=5.8.34">
-<!-- รูป App -->
-<link rel="apple-touch-icon" href="logo.png">
-<link rel="apple-touch-icon" sizes="76x76" href="logo.png">
-<link rel="apple-touch-icon" sizes="120x120" href="logo.png">
-<link rel="apple-touch-icon" sizes="152x152" href="logo.png">
-<link rel="apple-touch-startup-image" href="logo.png">													    													    
-<title>PAING NON</title>	
+ <head>
+ 	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+  	<meta name = "viewport" content = "width=device-width, initial-scale=1, user-scalable = no">
+  	<!-- app -->
+  	<meta name="apple-mobile-web-app-capable" content="yes" />
+  	<!-- keywords -->
+  	<meta data-n-head="ssr" data-hid="keywords" name="keywords" content="paingnon, exchange money, myaimar, mon, မန်, ပိုၚ်နန်,">    
+	<!-- bootstrap css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- bootstrap-icons -->
+	<link href="iconcss/bootstrap-icons.css" rel="stylesheet">   
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.js"></script>
+	<!-- รูป icon -->
+	<link rel="shortcut icon" href="https://raw.githubusercontent.com/PAINGNON/app/main/paingnon.ico?v=5.8.34">
+	<!-- รูป App -->
+	<link rel="apple-touch-icon" href="logo.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="logo.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="logo.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="logo.png">
+	<link rel="apple-touch-startup-image" href="logo.png">													    													    
+	<title>PAING NON</title>	
 </head>
-<body>
- <div class="text-center text-danger mt-5 fw-bold" id="rate">อัตราการแลกเปลี่ยน</div>	
+	<body>
+		<div class="text-center text-danger mt-5 fw-bold" id="rate"></div>
+		<div class="mb-3">
+      			<select class="input-group-text" id="currency-one" disabled >
+  				<option value="THB"selected>THB</option>
+				<option value="MMK">MMK</option>       
+  		</select>
+    		<input type=number" class="form-control" id="amount-one" value="1">
+		
+		
+		
+		<div class="justify-content-center input-group mb-3 mt-3">
+			<select class="input-group-text" id="currency-two"disabled >
+  				<option value="THB">THB</option>
+                		<option value="MMK"selected>MMK</option>      
+  			</select>
+  			<input type="number" class="input-group-text" id="amount-two" value="100000">
+		</div>
+		<div class="d-grid gap-2 col-1 mx-auto">
+  			<button class="btn btn-primary" id="btn" type="button">
+				<img src="iconsvgs/arrow-repeat.svg" width="32" height="32">
+				alternate
+			</button>
+		</div>
 
-<div class="justify-content-center input-group mb-3 mt-3">
-	<select class="input-group-text" id="currency-two"disabled >
-  		<option value="THB">THB</option>
-                <option value="MMK"selected>MMK</option>      
-  	</select>
-  	<input type="number" class="input-group-text" id="amount-two" value="100000">
-</div>
-<div class="d-grid gap-2 col-1 mx-auto">
-  <button class="btn btn-primary" id="btn" type="button"><img src="iconsvgs/arrow-repeat.svg" color: cornflowerblue; width="32" height="32"> alternate</button>
-</div>
-	
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">
-      <select class="input-group-text" id="currency-one" disabled >
-  		<option value="THB"selected>THB</option>
-		<option value="MMK">MMK</option>       
-  	</select>
-    </label>
-    <input type=number" class="form-control" id="amount-one" value="1">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
+    		
+  
+						     
+						     
+						     
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
